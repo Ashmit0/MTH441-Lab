@@ -1,5 +1,6 @@
 library(MASS)
 library(Matrix)
+library(matlib)
 ###p1### 
 p1data <- read.csv("p1data.csv")
 head(p1data)
@@ -75,22 +76,17 @@ print( (sd(u)^2 - 10)*10 )
 
 
 ###p6### 
-X <- matrix( round( runif( 40 , 1 , 50 )) , nrow = 8 , ncol = 5 )
+X <- matrix( round( runif( 40 , 0 , 100)) , nrow = 8 , ncol = 5 )
 PX1 <- X %*% solve( t(X)%*%X ) %*% t(X)
 PX2 <- diag(8) - PX1 
-u <- rep( 0 , 8 ) 
-I <- diag( 8 )
-Y <-  mvrnorm( n = 5000 , mu = u , Sigma = I  ) 
-f1 <- rankMatrix(PX1)[1]
-f2 <- rankMatrix(PX2)[1]
-u1 <- diag( Y%*%PX1%*%t(Y) )
-u1 <- u1/f1
-u2 <- diag( Y%*%PX2%*%t(Y) )
-u2 <- u2/f2
-f <- u2 * ( u1^(-1) )
+Y <-  mvrnorm( n = 5000 , mu = rep( 0 , 8 )  , Sigma = diag( 8 ) ) 
+f2 <- R(PX2)
+u1 <- diag( Y%*%PX1%*%t(Y) )/R(PX1)
+u2 <- diag( Y%*%PX2%*%t(Y) )/R(PX2)
+f <- u2*( u1^(-1) )
 hist( f )
-d1 <- 3 
-d2 <- 5 
+d1 <- 3
+d2 <- 5
 tmean <- d2/( d2 -2 )
 tvar <- ( 2 * (d2^2) * ( d1 + d2 - 2 ))/( d1* (d2-2)^2 * (d2 - 4))
 amean <- mean( f )
@@ -101,3 +97,4 @@ print( avar )
 print( tvar )
 print(((amean - tmean)/tmean)*100)
 print(((avar-tvar)/tvar)*100)
+print( f2 )
