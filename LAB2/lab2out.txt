@@ -1,0 +1,101 @@
+  Observation ShearStrength PropellantAge
+1           1       2158.70         15.50
+2           2       1678.15         23.75
+3           3       2316.00          8.00
+4           4       2061.30         17.00
+5           5       2207.50          5.50
+6           6       1708.30         19.00
+           [,1]
+[1,] 2627.82236
+[2,]  -37.15359
+
+Call:
+lm(formula = p1data$ShearStrength ~ p1data$PropellantAge)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-215.98  -50.68   28.74   66.61  106.76 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          2627.822     44.184   59.48  < 2e-16 ***
+p1data$PropellantAge  -37.154      2.889  -12.86 1.64e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 96.11 on 18 degrees of freedom
+Multiple R-squared:  0.9018,	Adjusted R-squared:  0.8964 
+F-statistic: 165.4 on 1 and 18 DF,  p-value: 1.643e-10
+
+
+Call:
+lm(formula = p1data$ShearStrength ~ p1data$PropellantAge)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-215.98  -50.68   28.74   66.61  106.76 
+
+Coefficients:
+                     Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          2627.822     44.184   59.48  < 2e-16 ***
+p1data$PropellantAge  -37.154      2.889  -12.86 1.64e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 96.11 on 18 degrees of freedom
+Multiple R-squared:  0.9018,	Adjusted R-squared:  0.8964 
+F-statistic: 165.4 on 1 and 18 DF,  p-value: 1.643e-10
+
+         [,1]
+[1,] 96.10609
+          [,1]
+[1,]  1.346070
+[2,] -4.451165
+
+Call:
+lm(formula = p2data$DeliveryTime ~ p2data$CaseNumbers + p2data$Distance)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5.7880 -0.6629  0.4364  1.1566  7.4197 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)        2.341231   1.096730   2.135 0.044170 *  
+p2data$CaseNumbers 1.615907   0.170735   9.464 3.25e-09 ***
+p2data$Distance    0.014385   0.003613   3.981 0.000631 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.259 on 22 degrees of freedom
+Multiple R-squared:  0.9596,	Adjusted R-squared:  0.9559 
+F-statistic: 261.2 on 2 and 22 DF,  p-value: 4.687e-16
+
+           [,1]
+[1,] 2.34123115
+[2,] 1.61590721
+[3,] 0.01438483
+[1] 3.037112
+[1] 0.03711215
+[1] 6.055561
+[1] 0.05556065
+     [,1] [,2] [,3] [,4] [,5] [,6] [,7] [,8]
+[1,]    0    0    0    0    0    0    0    0
+[2,]    0    0    0    0    0    0    0    0
+[3,]    0    0    0    0    0    0    0    0
+[4,]    0    0    0    0    0    0    0    0
+[5,]    0    0    0    0    0    0    0    0
+[6,]    0    0    0    0    0    0    0    0
+[7,]    0    0    0    0    0    0    0    0
+[8,]    0    0    0    0    0    0    0    0
+[1] 5.018461
+[1] 10.02328
+[1] 0.3692192
+[1] 0.2328021
+[1] 1.613686
+[1] 1.666667
+[1] 8.873633
+[1] 11.11111
+[1] -3.17881
+[1] -20.1373
+[1] 3

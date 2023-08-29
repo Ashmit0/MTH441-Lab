@@ -1,3 +1,4 @@
+sink("lab2out.txt")
 library(MASS)
 library(Matrix)
 library(matlib)

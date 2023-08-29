@@ -1,0 +1,154 @@
+
+Call:
+lm(formula = y ~ x1 + x2 + x3, data = df)
+
+Residuals:
+      1       2       3       4       5       6       7 
+-0.5000  0.5000  0.5000 -0.5000 -0.6667  1.3333 -0.6667 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   3.6667     0.7817   4.690  0.01832 * 
+x1            1.0000     0.5528   1.809  0.16815   
+x2            3.0000     0.4513   6.647  0.00694 **
+x3            1.8333     0.9574   1.915  0.15140   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.106 on 3 degrees of freedom
+Multiple R-squared:  0.9427,	Adjusted R-squared:  0.8854 
+F-statistic: 16.45 on 3 and 3 DF,  p-value: 0.02288
+
+Linear hypothesis test
+
+Hypothesis:
+(Intercept) = 0
+x1 - x2 = 0
+
+Model 1: restricted model
+Model 2: y ~ x1 + x2 + x3
+
+  Res.Df    RSS Df Sum of Sq      F  Pr(>F)  
+1      5 59.308                              
+2      3  3.667  2    55.641 22.762 0.01537 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "calculated F statistic: " "22.762237762238"         
+[1] 0.01537236
+         [,1]
+[1,] 4.690416
+[2,] 1.809068
+[3,] 6.646941
+[4,] 1.914854
+
+Call:
+lm(formula = y ~ x1 + x2 + x3, data = df)
+
+Residuals:
+      1       2       3       4       5       6       7 
+-0.5000  0.5000  0.5000 -0.5000 -0.6667  1.3333 -0.6667 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   3.6667     0.7817   4.690  0.01832 * 
+x1            1.0000     0.5528   1.809  0.16815   
+x2            3.0000     0.4513   6.647  0.00694 **
+x3            1.8333     0.9574   1.915  0.15140   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.106 on 3 degrees of freedom
+Multiple R-squared:  0.9427,	Adjusted R-squared:  0.8854 
+F-statistic: 16.45 on 3 and 3 DF,  p-value: 0.02288
+
+[1] 16.45455
+[1] 0.02287585
+
+Call:
+lm(formula = y ~ x1 + x2 + x3, data = df)
+
+Residuals:
+      1       2       3       4       5       6       7 
+-0.5000  0.5000  0.5000 -0.5000 -0.6667  1.3333 -0.6667 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)   
+(Intercept)   3.6667     0.7817   4.690  0.01832 * 
+x1            1.0000     0.5528   1.809  0.16815   
+x2            3.0000     0.4513   6.647  0.00694 **
+x3            1.8333     0.9574   1.915  0.15140   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.106 on 3 degrees of freedom
+Multiple R-squared:  0.9427,	Adjusted R-squared:  0.8854 
+F-statistic: 16.45 on 3 and 3 DF,  p-value: 0.02288
+
+Lack of Fit F Test 
+--------------
+Response :   y 
+Predictor:   x 
+
+                      Analysis of Variance Table                       
+----------------------------------------------------------------------
+                DF     Sum Sq     Mean Sq     F Value        Pr(>F)    
+----------------------------------------------------------------------
+x                1    232.2582    232.2582     104.466    3.745811e-08 
+Residual        15    255.3544    17.02362                             
+ Lack of fit     8    239.7913    29.97392    13.48178      0.00129587 
+ Pure Error      7    15.56303     2.22329                             
+----------------------------------------------------------------------
+
+Call:
+lm(formula = ShearStrength ~ PropellantAge, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-215.98  -50.68   28.74   66.61  106.76 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   2627.822     44.184   59.48  < 2e-16 ***
+PropellantAge  -37.154      2.889  -12.86 1.64e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 96.11 on 18 degrees of freedom
+Multiple R-squared:  0.9018,	Adjusted R-squared:  0.8964 
+F-statistic: 165.4 on 1 and 18 DF,  p-value: 1.643e-10
+
+
+Call:
+lm(formula = ShearStrength ~ PropellantAge, data = df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-215.98  -50.68   28.74   66.61  106.76 
+
+Coefficients:
+              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   2627.822     44.184   59.48  < 2e-16 ***
+PropellantAge  -37.154      2.889  -12.86 1.64e-10 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 96.11 on 18 degrees of freedom
+Multiple R-squared:  0.9018,	Adjusted R-squared:  0.8964 
+F-statistic: 165.4 on 1 and 18 DF,  p-value: 1.643e-10
+
+          [,1]
+[1,]  59.47464
+[2,] -12.85989
+           [,1]
+[1,] 2735.85227
+[2,]  -30.08971
+           [,1]
+[1,] 2519.79245
+[2,]  -44.21747
+[1] "Confidance interval for b0 = (2519.79245 , 2735.85227)"
+[1] "Confidance interval for b0 = (-44.21747 , -30.08971)"
+[1] "coorelation term: " "0.873749848956573" 
+[1] "confidance interval for b0: (2559.216 , 2696.428)"
+[1] "confidance interval for b0: (-41.63962, -32.66756)"
+[1] "confidance interval for b0: (2574.782 , 2680.863)"
+[1] "confidance interval for b1: (-40.62181 , -33.68537)"
